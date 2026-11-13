@@ -49,3 +49,48 @@
     justify-content: space-between;
   }
 }
+
+
+/* Edit 3 — Value I bring */
+.value-section {
+  background: var(--paper);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.value-card {
+  background: #fff;
+  border: 1px solid #e1e8e9;
+  padding: 28px;
+  border-top: 3px solid var(--teal);
+}
+
+.value-card h3 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: -.035em;
+  color: #102c41;
+  margin: 0 0 13px;
+}
+
+.value-card p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #516675;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 23px;
+  }
+}
