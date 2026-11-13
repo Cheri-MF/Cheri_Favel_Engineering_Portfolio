@@ -21,3 +21,31 @@
 .training-items p{margin:0;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.55;font-family:'DM Sans',Arial,sans-serif;color:var(--ink)}
 .training-items p strong{display:block;font-weight:700;color:var(--navy);font-family:inherit;font-size:14px}
 .training-items p span{display:block;color:var(--muted);font-size:12px;font-family:inherit;margin-top:3px}
+
+
+/* Hero contact actions — Edit 1 */
+.hero-actions {
+  margin: 24px 0 22px;
+  gap: 12px;
+}
+
+.hero-actions .button {
+  min-height: 48px;
+  border-radius: 3px;
+  gap: 12px;
+}
+
+@media (max-width: 560px) {
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-height: 48px;
+    justify-content: space-between;
+  }
+}
